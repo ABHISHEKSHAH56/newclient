@@ -88,7 +88,10 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Shah Basket
+     <div style={{}}>
+       <h3>Shah <span style={{color:"green"}}>Basket</span></h3>
+
+     </div>
     </LogoLink>
   );
 

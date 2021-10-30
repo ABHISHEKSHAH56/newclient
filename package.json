@@ -1,5 +1,5 @@
 {
-  "name": "treact",
+  "name": "ShahBasket",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,6 +31,7 @@
     "eject": "react-scripts eject",
     "deploy": "yarn build && netlify deploy --prod --dir=build"
   },
+  
   "eslintConfig": {
     "extends": "react-app",
     "overrides": [
