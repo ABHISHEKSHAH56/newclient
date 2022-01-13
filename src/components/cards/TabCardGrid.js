@@ -121,7 +121,7 @@ export default ({
               shop.map((card, index) => (
                 <CardContainer key={index}>
                   <Card className="group" href="#" initial="rest" whileHover="hover" animate="rest">
-                    <CardImageContainer imageSrc="https://images.unsplash.com/photo-1526318472351-c75fcf070305?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80">
+                    <CardImageContainer imageSrc={card.image}>
                       <CardHoverOverlay
                         variants={{
                           hover: {
@@ -135,12 +135,12 @@ export default ({
                         }}
                         transition={{ duration: 0.3 }}
                       >
-                        <CardButton>Buy Now</CardButton>
+                        <CardButton as="a" href={"#download"}>Buy Now</CardButton>
                       </CardHoverOverlay>
                     </CardImageContainer>
                     <CardText>
                       <CardTitle>{card.name}</CardTitle>
-                      <CardPrice>Rs/Kg</CardPrice>
+                      <CardPrice>Rs. {card.basePrice}.00 /Kg</CardPrice>
                     </CardText>
                   </Card>
                 </CardContainer>
