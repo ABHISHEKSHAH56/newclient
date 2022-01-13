@@ -140,7 +140,7 @@ export default ({
                     </CardImageContainer>
                     <CardText>
                       <CardTitle>{card.name}</CardTitle>
-                      <CardPrice>Rs  {card.basePrice.toFixed(2)}/Kg</CardPrice>
+                      <CardPrice>Rs/Kg</CardPrice>
                     </CardText>
                   </Card>
                 </CardContainer>
